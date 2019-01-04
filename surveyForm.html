@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>FreeCodeCamp Survey Form</title>
+		<style>
+			#title {
+				text-align:center;
+			}
+			#description {
+				text-align:center;
+			}
+			#survey-form {
+				margin-right:auto;
+				margin-left:auto;
+			}
+			#number{
+
+			}
+			label {
+				display:inline-block;
+				width: 50%;
+				text-align:right;
+				margin-right:2px;
+			}
+			input {
+				display:inline-block;
+				vertical-align:middle;
+
+			}
+			.nonText {
+				margin-left:51%;
+				text-align:left;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<h1 id="title">Survey Form</h1>
+		<p id="description">Let us know how we can improve freeCodeCamp</p>
+		<div style="margin-right:auto;margin-left:auto;">
+			<form id="survey-form">
+				<label id="name-label">*Name:</label>
+				<input id="name" type="text" name="name" placeholder="enter your name"required>
+				<br>
+				<label id="email-label">*Email:</label>
+				<input id="email" type="email" name="email" placeholder="enter your email"required>
+				<br>
+				<label id="number-label">*Age:</label>
+				<input id="number" type="number" name="age" min="12" max="90" placeholder="age" required>
+				<br>
+				<div class="dropdownlist">
+				<label>Which option best describes your current role?</label>
+				<select id="dropdown" name="occupation">
+					<option value="student">Student</option>
+					<option value="ftJob" selected>Full Time Job </option>
+					<option value="ftLearn">Full Time Learner</option>
+					<option value="na">Prefer not to say</option>
+					<option value="other">Other</option>
+				</select>
+				</div>
+				<br>
+				<div>
+				<label>*How likely is that you would recommend freeCodeCamp to a friend?</label>
+					<input name="likely" type="radio" value="definitely">Definitely<br>
+					<input class="nonText" name="likely" type="radio" value="maybe">Maybe<br>
+					<input name="likely" type="radio" value="notSure">Not sure<br>
+				</div>
+				<label>What do you like most in FCC:</label>
+				<select id="fcc" name="fcc">
+					<option value="challenges">Challenges</option>
+					<option value="projects">Projects</option>
+					<option value="community">Community</option>
+					<option value="openSource">Open Source</option>
+				</select>
+				<br>
+				<br>
+				<div>
+				<label>Things that should be improved in the future (Check all that apply):</label>
+				
+					<input name="improve" type="checkbox" value="frontEndProjects">Front-end Projects<br>
+					<input name="improve" type="checkbox" value="backEndProjects">Back-end Projects<br>
+					<input name="improve" type="checkbox" value="dataVisulatioztion">Data Visualiztion<br>
+					<input name="improve" type="checkbox" value="challenges">Challenges<br>
+					<input name="improve" type="checkbox" value="openSource">Open Source Community<br>
+					<input name="improve" type="checkbox" value="videos">Videos<br>
+					<input name="improve" type="checkbox" value="gitterhelp">Gitter help rooms<br>
+					<input name="improve" type="checkbox" value="meetups">City Meetups<br>
+					<input name="improve" type="checkbox" value="wiki">Wiki<br>
+					<input name="improve" type="checkbox" value="forum">Forum<br>
+					<input name="improve" type="checkbox" value="courses">Additional Courses<br>
+				</div>
+				<label>Any Comments or Suggestions?</label>
+				<textarea placeholder="Enter your comment here..."rows="5" cols="60"></textarea>
+				<br><br>
+				<button id="submit" type="sbumit" style="margin-right:auto;margin-left:auto;">Submit</button>
+			</form>
+		</div>
+	</body>
+</html>
