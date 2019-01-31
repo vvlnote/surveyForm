@@ -1,0 +1,50 @@
+
+	#title {
+		text-align:center;
+	}
+	#description {
+		text-align:center;
+	}
+	.container {
+		padding:20px;
+		
+	}
+	#survey-form {
+		margin-right:auto;
+		margin-left:auto;
+	}
+	input[type=text], select, textarea {
+		width:100%;
+		resize: vertical;
+	}
+	input[type=submit] {
+		background-color:#27ae34;
+		margin-top: 1%;
+		margin-left:45%;
+		padding:0.3em;
+		width:12%;
+		font-size:1.2em;
+	}
+	.col-right-50{
+		float:left;
+		width:50%;
+		text-align:right;
+		margin-right:5px;
+	}
+	.col-left-50{
+		float:left;
+		text-align:left;
+	}
+	.row:after {
+		content:'';
+		display: table;
+		clear:both;
+	}
+	button {
+		color:red;
+		padding:12px 20px;
+		border:none;
+		margin-right:10%;
+		float:right;
+	}
+
